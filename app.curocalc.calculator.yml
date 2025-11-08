@@ -16,21 +16,21 @@ modules:
       - chmod +x /app/curocalc/curocalc
       - mkdir -p /app/bin
       - ln -s /app/curocalc/curocalc /app/bin/curocalc
-      - install -Dm0644 app.curocalc.calculator.desktop /app/share/applications/app.curocalc.calculator.desktop
-      - install -Dm0644 app.curocalc.calculator.metainfo.xml /app/share/metainfo/app.curocalc.calculator.metainfo.xml
-      - install -Dm0644 app.curocalc.calculator.svg /app/share/icons/hicolor/scalable/apps/app.curocalc.calculator.svg
+      - install -Dm0644 curocalc/app.curocalc.calculator.desktop /app/share/applications/app.curocalc.calculator.desktop
+      - install -Dm0644 curocalc/app.curocalc.calculator.metainfo.xml /app/share/metainfo/app.curocalc.calculator.metainfo.xml
+      - install -Dm0644 curocalc/app.curocalc.calculator.svg /app/share/icons/hicolor/scalable/apps/app.curocalc.calculator.svg
     sources:
       - type: archive
-        url: https://github.com/andrewmurphy353/curo_app_bin/releases/download/2.0.0/curocalc-2.0.0-linux-x86_64.tar.gz
-        sha256: c4bc88982d676e9056833e5c9c5497935907e78d8b8cd9ab1fc5006c0f0ec3d3
+        url: https://github.com/andrewmurphy353/curo_app_bin/releases/download/2.0.1/curocalc-2.0.1-linux-x86_64.tar.gz
+        sha256: 5d216428cb97ae65c415db97aa68b8203f03fe94fb0219634e8fe1bdd3c34db4
         strip-components: 1
         dest: curocalc
-      - type: file
-        url: https://github.com/andrewmurphy353/curo_app_bin/releases/download/2.0.0/app.curocalc.calculator.desktop
-        sha256: 83868ba68b43a0648e075d0ec63c988fd81ba8180c11e536010a889d541b1d0e
-      - type: file
-        url: https://github.com/andrewmurphy353/curo_app_bin/releases/download/2.0.0/app.curocalc.calculator.metainfo.xml
-        sha256: 969799db8aabb0bdf94335cc3ce6454fd77c09a4b3188693d373ba5856867db8
-      - type: file
-        url: https://github.com/andrewmurphy353/curo_app_bin/releases/download/2.0.0/app.curocalc.calculator.svg
-        sha256: 80496af7e57e7d9981966372f5c011bd6e6d4b4d590a0a30f42aaee8cbde4a7e
+        only-arches:
+          - x86_64
+      - type: archive
+        url: https://github.com/andrewmurphy353/curo_app_bin/releases/download/2.0.1/curocalc-2.0.1-linux-arm64.tar.gz
+        sha256: 41b2f185af01cbfb696fca4f48ef9eb09e743eac48eb2656482239dd78b14fb0
+        strip-components: 1
+        dest: curocalc
+        only-arches:
+          - aarch64

@@ -21,15 +21,15 @@ modules:
       - install -Dm0644 curocalc/app.curocalc.calculator.svg /app/share/icons/hicolor/scalable/apps/app.curocalc.calculator.svg
     sources:
       - type: archive
-        url: https://github.com/andrewmurphy353/curo_app_bin/releases/download/2.0.1/curocalc-2.0.1-linux-x86_64.tar.gz
-        sha256: 5d216428cb97ae65c415db97aa68b8203f03fe94fb0219634e8fe1bdd3c34db4
+        url: https://github.com/andrewmurphy353/curo_app_bin/releases/download/2.1.0/curocalc-2.1.0-linux-x86_64.tar.gz
+        sha256: e32cf149d4d9af7d7fe6f03e0bd4a2c7506d3fd24b60290f04c2de41dbbfd204
         strip-components: 1
         dest: curocalc
         only-arches:
           - x86_64
       - type: archive
-        url: https://github.com/andrewmurphy353/curo_app_bin/releases/download/2.0.1/curocalc-2.0.1-linux-arm64.tar.gz
-        sha256: 41b2f185af01cbfb696fca4f48ef9eb09e743eac48eb2656482239dd78b14fb0
+        url: https://github.com/andrewmurphy353/curo_app_bin/releases/download/2.1.0/curocalc-2.1.0-linux-arm64.tar.gz
+        sha256: 84439b83a44bba9bfae729be723d469dbdfbfbd6409cdf8b16f1f0bff56f7f9d
         strip-components: 1
         dest: curocalc
         only-arches:

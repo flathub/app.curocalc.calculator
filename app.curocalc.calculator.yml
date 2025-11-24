@@ -29,7 +29,7 @@ modules:
           - x86_64
       - type: archive
         url: https://github.com/andrewmurphy353/curo_app_bin/releases/download/2.1.0/curocalc-2.1.0-linux-arm64.tar.gz
-        sha256: 84439b83a44bba9bfae729be723d469dbdfbfbd6409cdf8b16f1f0bff56f7f9d
+        sha256: 0a96fa1dbaa4f015abd7738de96fbb4cc69aa0ca05466e768d2920d07e7e9037
         strip-components: 1
         dest: curocalc
         only-arches:

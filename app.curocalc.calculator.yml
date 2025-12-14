@@ -19,7 +19,7 @@ modules:
       - install -Dm0644 curocalc/app.curocalc.calculator.desktop /app/share/applications/app.curocalc.calculator.desktop
       - install -Dm0644 curocalc/app.curocalc.calculator.metainfo.xml /app/share/metainfo/app.curocalc.calculator.metainfo.xml
       - install -Dm0644 curocalc/app.curocalc.calculator.svg /app/share/icons/hicolor/scalable/apps/app.curocalc.calculator.svg
-sources:
+    sources:
       - type: archive
         url: https://github.com/andrewmurphy353/curo_app_bin/releases/download/2.3.0/curocalc-2.3.0-linux-x86_64.tar.gz
         sha256: 280edb3d1095f6ee5e7d7023b6e380a2263cb175bea354ecdb605697df9194fd
